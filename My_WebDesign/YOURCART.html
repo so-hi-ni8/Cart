@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR CART</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  height: 500px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+</style>
+<body>
+    <nav class="py-2 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">MEN</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2"> WOMEN</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">COLLECTIONS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">ACCESSORIES</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">PRICING</a></li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="45" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg> YOUR CART</span>
+          </a>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+        </div>
+      </header>
+      <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="adobe-black-dresses.webp" class="d-block w-100" alt="..." height="450px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Black Vine</h5>
+              <p>Relish your black beauty with the best available size only for you!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="model pic.png" class="d-block w-100" alt="..." height="450px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ebony Dress</h5>
+              <p>Deep, dark black color reminiscent of ebony dress just for you!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="white_dress.webp" class="d-block w-100" alt="..." height="450px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>White in Bloom</h5>
+              <p>A contemporary design crafted to catch attention
+                while still blending in with the crowd. Super comfy 
+                and lightweight makes it perfect for any ocassion.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Why shop from YOUR CART?</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="345" height="30" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+              <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Unmatched Selection</h3>
+            <p>Explore a vast range of high-quality products, carefully curated for your needs, all in one place. Discover unique items you won't find anywhere else.</p>
+            <a href="#" class="btn btn-primary">
+              Try out!
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="345" height="30" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12ZM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Z"/>
+              <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Personalized Experience</h3>
+            <p>Enjoy tailored recommendations based on your preferences and past shopping behavior, making your journey effortless and enjoyable.</p>
+            <a href="#" class="btn btn-primary">
+              Try out!
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="345" height="30" fill="currentColor" class="bi bi-file-earmark-lock2" viewBox="0 0 16 16">
+              <path d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0zM7 7v1h2V7a1 1 0 0 0-2 0z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Secure and Reliable</h3>
+            <p>Shop with confidence knowing your transactions are fully secure, and our dedicated support team is here to ensure your satisfaction, every step of the way.</p>
+            <a href="#" class="btn btn-primary">
+              Try out!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="form cid-rmLeswuYVi" id="form01-13">
+    
+    
+      <div class="container">
+        <div class="row">  
+  
+               <div class="col-lg-6 col-md-12 align-left">
+                   <h3 class="mbr-section-subtitle mbr-fonts-style display-4">CONTACT</h3>
+                  <h2 class="mbr-section-title pt-4 mbr-fonts-style display-2">Need to message us?<br>Please fill out the form</h2>
+                  <p class="mbr-text pt-3 mbr-light mbr-fonts-style display-7">
+                      You can contact us any time you have questions.</p>
+               
+              </div>
+          
+          
+          <div class="col-lg-6 col-md-12 mx-auto mbr-form" data-form-type="formoid">
+  <!---Formbuilder Form--->
+  <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="Cz3/gmzKs1oPNXSEkXpMl6xiyQYVlVGJhQ4rZaPw3wc5mzzlm/2xvATHzTschYX0ZgFIlCqEn2JTxpthOnKJQyMfX4mabjUqv2f2JB4NcTd6DlEJOlxPgB2/TWFnQMFm">
+  <div class="form-row">
+  <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+  <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
+  </div>
+  <div class="dragArea form-row">
+  <div class="col-lg-12 form-group" data-for="name">
+  <input type="text" name="name" placeholder="FULL NAME" data-form-field="name" class="form-control display-7" value="" id="name-form01-13">
+  </div>
+  <div class="col-lg-12 form-group" data-for="email">
+  <input type="email" name="email" placeholder="EMAIL" data-form-field="email" class="form-control display-7" value="" id="email-form01-13">
+  </div>
+  <div data-for="message" class="col-lg-12 form-group">
+  <textarea name="message" placeholder="MESSAGE..." data-form-field="message" required="required" class="form-control display-7" value="" id="message-form01-13"></textarea>
+  </div>
+  <div class="col-auto"><button type="button" class="btn btn-primary">SEND</button></div>
+  </div>
+  </form><!---Formbuilder Form--->
+  </div>
+      </div>
+           </div>
+  </section>
+  
+
+  <section id="contact" class="gradient-background">
+    <div class="container ">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
+        <div class="col mb-3">
+
+          <p class="text-body-secondary">© YOURCART-All Rights Reserved</p>
+        </div>
+
+        <div class="col mb-3">
+
+        </div>
+
+        <div class="col mb-3">
+          <h5>Help</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Customer Reviews</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shipping and Returns Policies</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Customer Support Channels</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Operating Hours</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Response Time</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Feedback and Inquiries</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Language and Regional Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>About Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Company Story and Mission</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Quality Assurance</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Team and Expertise</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Customer Focus</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Social Responsibility</a></li>
+          </ul>
+        </div>
+
+        
+      </footer>
+    </div>
+  </section>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
